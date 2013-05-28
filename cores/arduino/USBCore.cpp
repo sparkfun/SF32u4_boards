@@ -49,21 +49,29 @@ const u16 STRING_LANGUAGE[2] = {
 	0x0409	// English
 };
 
-const u16 STRING_IPRODUCT[17] = {
-	(3<<8) | (2+2*16),
-#if USB_PID == 0x8036	
-	'A','r','d','u','i','n','o',' ','L','e','o','n','a','r','d','o'
+const u16 STRING_IPRODUCT[15] = {
+	(3<<8) | (2+2*14),
+#if USB_PID == 0x9209
+	'W','i','F','l','y','i','n',' ',' ',' ',' ',' ',' ',' '
+#elif USB_PID == 0x9207
+	'L','i','l','y','P','a','d','U','S','B',' ',' ',' ',' '
+#elif USB_PID == 0x9205
+	'P','r','o',' ','M','i','c','r','o',' ','5','V',' ',' '
+#elif USB_PID == 0x9203
+	'P','r','o',' ','M','i','c','r','o',' ','3','.','3','V'
+#elif USB_PID == 0x2B74
+	'M','a','K','e','y',' ','M','a','K','e','y',' ',' ',' '
 #else
-	'U','S','B',' ','I','O',' ','B','o','a','r','d',' ',' ',' ',' '
+	'U','S','B',' ','I','O',' ','B','o','a','r','d',' ',' '
 #endif
 };
 
-const u16 STRING_IMANUFACTURER[12] = {
-	(3<<8) | (2+2*11),
-#if USB_VID == 0x2341
-	'A','r','d','u','i','n','o',' ','L','L','C'
+const u16 STRING_IMANUFACTURER[21] = {
+	(3<<8) | (2+2*20),
+#if USB_VID == 0x1B4F
+	'S','p','a','r','k','f','u','n',' ','E','l','e','c','t','r','o','n','i','c','s'
 #else
-	'U','n','k','n','o','w','n',' ',' ',' ',' '
+	'U','n','k','n','o','w','n',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' '
 #endif
 };
 
