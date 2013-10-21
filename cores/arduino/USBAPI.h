@@ -39,6 +39,7 @@ public:
 	virtual int read(void);
 	virtual void flush(void);
 	virtual size_t write(uint8_t);
+	using Print::write; // pull in write(str) and write(buf, size) from Print
 	operator bool();
 };
 extern Serial_ Serial;
@@ -122,8 +123,8 @@ class Keyboard_ : public Print
 {
 private:
 	KeyReport _keyReport;
-public:
 	void sendReport(KeyReport* keys);
+public:
 	Keyboard_(void);
 	void begin(void);
 	void end(void);
