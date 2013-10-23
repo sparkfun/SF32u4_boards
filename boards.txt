@@ -42,48 +42,6 @@ promicro8.build.variant=promicro
 
 ##############################################################
 
-LilyPadUSB.name=LilyPad Arduino USB
-LilyPadUSB.upload.protocol=avr109
-LilyPadUSB.upload.maximum_size=28672
-LilyPadUSB.upload.speed=57600
-LilyPadUSB.upload.disable_flushing=true
-LilyPadUSB.bootloader.low_fuses=0xff
-LilyPadUSB.bootloader.high_fuses=0xd8
-LilyPadUSB.bootloader.extended_fuses=0xfe
-LilyPadUSB.bootloader.path=caterina
-LilyPadUSB.bootloader.file=Caterina-lilypadusb.hex
-LilyPadUSB.bootloader.unlock_bits=0x3F
-LilyPadUSB.bootloader.lock_bits=0x2F
-LilyPadUSB.build.mcu=atmega32u4
-LilyPadUSB.build.f_cpu=8000000L
-LilyPadUSB.build.vid=0x1B4F
-LilyPadUSB.build.pid=0x9208
-LilyPadUSB.build.core=arduino:arduino
-LilyPadUSB.build.variant=promicro
-
-##############################################################
-
-WiFlyin.name=SparkFun WiFlyin'
-WiFlyin.upload.protocol=avr109
-WiFlyin.upload.maximum_size=28672
-WiFlyin.upload.speed=57600
-WiFlyin.upload.disable_flushing=true
-WiFlyin.bootloader.low_fuses=0xff
-WiFlyin.bootloader.high_fuses=0xd8
-WiFlyin.bootloader.extended_fuses=0xcb
-WiFlyin.bootloader.path=caterina
-WiFlyin.bootloader.file=Caterina-wiflyin.hex
-WiFlyin.bootloader.unlock_bits=0x3F
-WiFlyin.bootloader.lock_bits=0x2F
-WiFlyin.build.mcu=atmega32u4
-WiFlyin.build.f_cpu=16000000L
-WiFlyin.build.vid=0x1B4F
-WiFlyin.build.pid=0x920A
-WiFlyin.build.core=arduino:arduino
-WiFlyin.build.variant=promicro
-
-##############################################################
-
 fiov3.name=SparkFun Fio V3 3.3V/8MHz
 fiov3.upload.protocol=avr109
 fiov3.upload.maximum_size=28672
