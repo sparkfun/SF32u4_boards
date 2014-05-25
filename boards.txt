@@ -79,5 +79,5 @@ minibench.build.mcu=atmega32u4
 minibench.build.f_cpu=16000000L
 minibench.build.vid=0x1B4F
 minibench.build.pid=0x2B75
-minibench.build.core=arduino
+minibench.build.core=arduino:arduino
 minibench.build.variant=promicro
