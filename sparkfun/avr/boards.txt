@@ -32,7 +32,7 @@ promicro16.build.f_cpu=16000000L
 promicro16.build.vid=0x1B4F
 promicro16.build.pid=0x9206
 promicro16.build.usb_product="SparkFun Pro Micro"
-promicro16.build.core=arduino
+promicro16.build.core=arduino:arduino
 promicro16.build.variant=promicro
 promicro16.build.extra_flags={build.usb_flags}
 
@@ -65,7 +65,7 @@ promicro8.build.f_cpu=8000000L
 promicro8.build.vid=0x1B4F
 promicro8.build.pid=0x9204
 promicro8.build.usb_product="SparkFun Pro Micro"
-promicro8.build.core=arduino
+promicro8.build.core=arduino:arduino
 promicro8.build.variant=promicro
 promicro8.build.extra_flags={build.usb_flags}
 
@@ -98,7 +98,7 @@ fiov3.build.f_cpu=8000000L
 fiov3.build.vid=0x1B4F
 fiov3.build.pid=0xF101
 fiov3.build.usb_product="SparkFun Fio v3"
-fiov3.build.core=arduino
+fiov3.build.core=arduino:arduino
 fiov3.build.variant=promicro
 fiov3.build.extra_flags={build.usb_flags}
 
@@ -131,6 +131,6 @@ makeymakey.build.f_cpu=16000000L
 makeymakey.build.vid=0x1B4F
 makeymakey.build.pid=0x2B75
 makeymakey.build.usb_product="SparkFun MaKey"
-makeymakey.build.core=arduino
+makeymakey.build.core=arduino:arduino
 makeymakey.build.variant=promicro
 makeymakey.build.extra_flags={build.usb_flags}
