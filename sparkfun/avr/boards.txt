@@ -1,5 +1,6 @@
 
 menu.cpu=Processor
+menu.usbcore=USB Core
 
 ##############################################################
 
@@ -33,8 +34,21 @@ promicro16.build.vid=0x1B4F
 promicro16.build.pid=0x9206
 promicro16.build.usb_product="SparkFun Pro Micro"
 promicro16.build.core=arduino:arduino
-promicro16.build.variant=promicro
+#promicro16.build.variant=promicro
 promicro16.build.extra_flags={build.usb_flags}
+
+#USB core selection
+#HID Project needs to be installed https://github.com/NicoHood/HID
+promicro16.menu.usbcore.hid=Serial + Extended HID
+promicro16.menu.usbcore.hid.build.variant=HID:leonardo_hid
+promicro16.menu.usbcore.gamepad=Serial + Gamepad HID
+promicro16.menu.usbcore.gamepad.build.variant=HID:leonardo_gamepad
+promicro16.menu.usbcore.custom=Serial + Custom HID
+promicro16.menu.usbcore.custom.build.variant=HID:leonardo_custom
+promicro16.menu.usbcore.USB_CORE=Default Core
+promicro16.menu.usbcore.USB_CORE.build.variant=HID:leonardo
+promicro16.menu.usbcore.NO_USB=No USB functions
+promicro16.menu.usbcore.NO_USB.build.variant=HID:leonardo_no_usb
 
 ##############################################################
 
@@ -66,8 +80,21 @@ promicro8.build.vid=0x1B4F
 promicro8.build.pid=0x9204
 promicro8.build.usb_product="SparkFun Pro Micro"
 promicro8.build.core=arduino:arduino
-promicro8.build.variant=promicro
+#promicro8.build.variant=promicro
 promicro8.build.extra_flags={build.usb_flags}
+
+#USB core selection
+#HID Project needs to be installed https://github.com/NicoHood/HID
+promicro8.menu.usbcore.hid=Serial + Extended HID
+promicro8.menu.usbcore.hid.build.variant=HID:leonardo_hid
+promicro8.menu.usbcore.gamepad=Serial + Gamepad HID
+promicro8.menu.usbcore.gamepad.build.variant=HID:leonardo_gamepad
+promicro8.menu.usbcore.custom=Serial + Custom HID
+promicro8.menu.usbcore.custom.build.variant=HID:leonardo_custom
+promicro8.menu.usbcore.USB_CORE=Default Core
+promicro8.menu.usbcore.USB_CORE.build.variant=HID:leonardo
+promicro8.menu.usbcore.NO_USB=No USB functions
+promicro8.menu.usbcore.NO_USB.build.variant=HID:leonardo_no_usb
 
 ##############################################################
 
@@ -99,8 +126,21 @@ fiov3.build.vid=0x1B4F
 fiov3.build.pid=0xF101
 fiov3.build.usb_product="SparkFun Fio v3"
 fiov3.build.core=arduino:arduino
-fiov3.build.variant=promicro
+#fiov3.build.variant=promicro
 fiov3.build.extra_flags={build.usb_flags}
+
+#USB core selection
+#HID Project needs to be installed https://github.com/NicoHood/HID
+fiov3.menu.usbcore.hid=Serial + Extended HID
+fiov3.menu.usbcore.hid.build.variant=HID:leonardo_hid
+fiov3.menu.usbcore.gamepad=Serial + Gamepad HID
+fiov3.menu.usbcore.gamepad.build.variant=HID:leonardo_gamepad
+fiov3.menu.usbcore.custom=Serial + Custom HID
+fiov3.menu.usbcore.custom.build.variant=HID:leonardo_custom
+fiov3.menu.usbcore.USB_CORE=Default Core
+fiov3.menu.usbcore.USB_CORE.build.variant=HID:leonardo
+fiov3.menu.usbcore.NO_USB=No USB functions
+fiov3.menu.usbcore.NO_USB.build.variant=HID:leonardo_no_usb
 
 ##############################################################
 
@@ -132,5 +172,18 @@ makeymakey.build.vid=0x1B4F
 makeymakey.build.pid=0x2B75
 makeymakey.build.usb_product="SparkFun MaKey"
 makeymakey.build.core=arduino:arduino
-makeymakey.build.variant=promicro
+#makeymakey.build.variant=promicro
 makeymakey.build.extra_flags={build.usb_flags}
+
+#USB core selection
+#HID Project needs to be installed https://github.com/NicoHood/HID
+makeymakey.menu.usbcore.hid=Serial + Extended HID
+makeymakey.menu.usbcore.hid.build.variant=HID:leonardo_hid
+makeymakey.menu.usbcore.gamepad=Serial + Gamepad HID
+makeymakey.menu.usbcore.gamepad.build.variant=HID:leonardo_gamepad
+makeymakey.menu.usbcore.custom=Serial + Custom HID
+makeymakey.menu.usbcore.custom.build.variant=HID:leonardo_custom
+makeymakey.menu.usbcore.USB_CORE=Default Core
+makeymakey.menu.usbcore.USB_CORE.build.variant=HID:leonardo
+makeymakey.menu.usbcore.NO_USB=No USB functions
+makeymakey.menu.usbcore.NO_USB.build.variant=HID:leonardo_no_usb
