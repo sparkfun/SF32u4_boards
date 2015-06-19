@@ -58,7 +58,9 @@ VID = 0x1B4F
 # SparkFun Pro Micro 5V PID = 0x9205
 # "                " 3.3V PID = 0x9203
 # MaKey MaKey PID = 0x2B74
-PID = 0x9205
+# Qduino Mini PID = 0x514D
+#PID = 0x9205
+PID = 0x514D
 
 # MCU name
 MCU = atmega32u4
@@ -85,7 +87,7 @@ BOARD = USER
 #     does not *change* the processor frequency - it should merely be updated to
 #     reflect the processor speed set externally so that the code can use accurate
 #     software delays.
-F_CPU = 16000000
+F_CPU = 8000000
 
 
 # Input clock frequency.

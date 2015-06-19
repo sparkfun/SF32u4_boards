@@ -203,6 +203,8 @@ const USB_Descriptor_String_t ProductString =
 	.UnicodeString			= L"Pro Micro 3.3V"
 	#elif DEVICE_PID == 0x2B74
 	.UnicodeString			= L"MaKey MaKey   "
+	#elif DEVICE_PID == 0x514D
+	.UnicodeString			= L"Qduino Mini   "
 	#else
 	.UnicodeString			= L"USB IO board  "
 	#endif
