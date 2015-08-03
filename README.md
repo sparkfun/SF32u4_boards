@@ -6,6 +6,7 @@ This contains support for the following SparkFun 32u4 based Arduino-compatible d
 * [ProMicro 3.3V](https://www.sparkfun.com/products/10999)
 * [Fio v3](https://www.sparkfun.com/products/11520)
 * [MakeyMakey](https://www.sparkfun.com/products/11511)
+* [Qduino Mini]()
 
 ### Installation Instructions
 
@@ -17,7 +18,7 @@ places:
 	* Directory structure example: C:/Users/userName/Arduino/hardware/sparkfun/avr
 
 ### Notes
-	
+
 * **Please note: This will only work under Arduino IDE versions 1.5 and up.**
 * **For Arduino 1.0.X Compatibility**: Please download our [release for Arduino 1.0.6 and earlier](https://github.com/sparkfun/SF32u4_boards/releases/tag/pre-1.6).
 * Information on compiling and programming the bootloader can be found in the bootloader directory.

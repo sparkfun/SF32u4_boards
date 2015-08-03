@@ -26,6 +26,7 @@ promicro16.bootloader.extended_fuses=0xcb
 promicro16.bootloader.file=caterina/Caterina-promicro16.hex
 promicro16.bootloader.unlock_bits=0x3F
 promicro16.bootloader.lock_bits=0x2F
+promicro8.bootloader.tool=arduino:avrdude
 
 promicro16.build.mcu=atmega32u4
 promicro16.build.f_cpu=16000000L
@@ -59,6 +60,7 @@ promicro8.bootloader.extended_fuses=0xfe
 promicro8.bootloader.file=caterina/Caterina-promicro8.hex
 promicro8.bootloader.unlock_bits=0x3F
 promicro8.bootloader.lock_bits=0x2F
+promicro8.bootloader.tool=arduino:avrdude
 
 promicro8.build.mcu=atmega32u4
 promicro8.build.f_cpu=8000000L
@@ -92,6 +94,7 @@ fiov3.bootloader.extended_fuses=0xfe
 fiov3.bootloader.file=caterina/Caterina-fio.hex
 fiov3.bootloader.unlock_bits=0x3F
 fiov3.bootloader.lock_bits=0x2F
+fiov3.bootloader.tool=arduino:avrdude
 
 fiov3.build.mcu=atmega32u4
 fiov3.build.f_cpu=8000000L
@@ -125,6 +128,7 @@ makeymakey.bootloader.extended_fuses=0xcb
 makeymakey.bootloader.file=caterina/Caterina-makey.hex
 makeymakey.bootloader.unlock_bits=0x3F
 makeymakey.bootloader.lock_bits=0x2F
+makeymakey.bootloader.tool=arduino:avrdude
 
 makeymakey.build.mcu=atmega32u4
 makeymakey.build.f_cpu=16000000L
@@ -137,12 +141,12 @@ makeymakey.build.extra_flags={build.usb_flags}
 
 ##############################################################
 
-qduinomini.name=Qtechknow Qduino Mini 3.3V/8MHz
-qduinomini.build.board=AVR_PROMICRO8
+qduinomini.name=Qtechknow Qduino Mini
+qduinomini.build.board=AVR_QDUINOMINI
 qduinomini.build.vid.0=0x1B4F
-qduinomini.build.pid.0=0x9203
+qduinomini.build.pid.0=0x514D
 qduinomini.build.vid.1=0x1B4F
-qduinomini.build.pid.1=0x9204
+qduinomini.build.pid.1=0x516D
 
 qduinomini.upload.tool=avrdude
 qduinomini.upload.protocol=avr109
@@ -152,18 +156,19 @@ qduinomini.upload.disable_flushing=true
 qduinomini.upload.use_1200bps_touch=true
 qduinomini.upload.wait_for_upload_port=true
 
-qduinomini.bootloader.low_fuses=0xff
-qduinomini.bootloader.high_fuses=0xd8
-qduinomini.bootloader.extended_fuses=0xfe
+qduinomini.bootloader.low_fuses=0xFF
+qduinomini.bootloader.high_fuses=0xD8
+qduinomini.bootloader.extended_fuses=0xFE
 qduinomini.bootloader.file=caterina/Caterina-qduinomini.hex
-promicro8.bootloader.unlock_bits=0x3F
-promicro8.bootloader.lock_bits=0x2F
+qduinomini.bootloader.unlock_bits=0x3F
+qduinomini.bootloader.lock_bits=0x2F
+qduinomini.bootloader.tool=arduino:avrdude
 
-promicro8.build.mcu=atmega32u4
-promicro8.build.f_cpu=8000000L
-promicro8.build.vid=0x1B4F
-promicro8.build.pid=0x9204
-promicro8.build.usb_product="SparkFun Qduino Mini"
-promicro8.build.core=arduino:arduino
-promicro8.build.variant=promicro
-promicro8.build.extra_flags={build.usb_flags}
+qduinomini.build.mcu=atmega32u4
+qduinomini.build.f_cpu=8000000L
+qduinomini.build.vid=0x1B4F
+qduinomini.build.pid=0x516D
+qduinomini.build.usb_product="Qtechknow Qduino Mini"
+qduinomini.build.core=arduino:arduino
+qduinomini.build.variant=qduinomini
+qduinomini.build.extra_flags={build.usb_flags}
