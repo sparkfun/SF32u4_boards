@@ -1,3 +1,5 @@
+***NOTE:*** *This repository is no longer being maintained. We have (or will) migrate all support to the [Arduino Boards](https://github.com/sparkfun/Arduino_Boards) repository. Please use this repository for reference or older products only.*
+
 SparkFun ATmega32U4 Board Support
 ===========================
 
